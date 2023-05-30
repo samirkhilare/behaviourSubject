@@ -1,0 +1,33 @@
+
+.container{
+    margin-top: 50px;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    width: 600px;
+    background-color: rgba(var(--bs-tertiary-color-rgb), .5);
+
+}
+.form{
+    padding: 20px 20px;
+    margin-left: 100px;
+}
+.button1{
+    margin-left: 60px;
+}
+.button2{
+    margin-left: 60px;
+}
+
+/* ::ng-deep .mat-mdc-fab .mat-mdc-button-touch-target, 
+.mat-mdc-mini-fab .mat-mdc-button-touch-target {
+    height: 5px;
+    width: 5px;
+} */
+
+.delete,.edit{
+    height: 25px;
+    width: 25px;
+}
+.form-control1{
+width: 150px;
+}

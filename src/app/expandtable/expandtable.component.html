@@ -1,0 +1,13 @@
+<mat-table>
+    <ng-container matColumnDef="name">
+        <mat-header-cell *matHeaderCellDef>Name</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.name }}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="age">
+        <mat-header-cell *matHeaderCellDef>Age</mat-header-cell>
+        <mat-cell *matCellDef="let element">{{ element.age }}</mat-cell>
+    </ng-container>
+    <mat-row *matRowDef="let element; index as i" (click)="isExpanded[i] = !isExpanded[i]"
+        [class.expanded]="isExpanded[i]">
+    </mat-row>
+</mat-table>
